@@ -5,9 +5,9 @@
 /* colors */
 
 :root {
-    --primary: rgba(68, 88, 119, 1);
-    --secondary: rgba(146, 204, 206, 1);
-    --tertiary: rgba(49, 52, 61, 1);
+    --primary: rgb(68, 119, 81);
+    --secondary: rgb(21, 22, 22);
+    --tertiary: rgb(14, 58, 20);
 }
 
 body {
@@ -78,7 +78,7 @@ main {
 .hero {
     background: rgb(68, 88, 120);
     background-image: url("../photos/family\ crest.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
-    background-size: cover;
+    background-size:contain;
     background-position: center;
     background-blend-mode: soft-light;
     min-height: 30vh;
@@ -131,3 +131,120 @@ flex: 0 0 90%;
 .work-section p {
     margin-bottom: 20px;
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    border: 5px solid var(--secondary);
+    background-color: var(--primary);
+    color: var(--tertiary);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50%-1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+}
+
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.flex-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-item div {
+    background-color: var(--secondary);
+    padding: 8px 10px;
+}
+
+.flex-item h3 {
+    font-size: 1.6rem;
+}
+
+.contact-me address a {
+    color: var(--tertiary);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: normal;
+    background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25rem 0.1rem;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+}
+
+.contact-me address a:hover{
+    background-size: 100% 88%;
+    color: var(--secondary);
+}
+
+.run-buddy {
+    background-image: url("../photos/run.jpg");
+    background-size:contain;
+}
+
+.future-project {
+    background-image: url("../photos/projects.jpg");
+}
+
+.future-project-2 {
+    background-image: url("../photos/projects.jpg");
+}
+
+.future-project-3 {
+    background-image: url("../photos/projects.jpg");
+}
+
+.future-project-4 {
+    background-image: url("../photos/projects.jpg");
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .work-section > h2,
+    .work-section > div {
+        flex: 0 0 100%;
+    }
+
+    .work-section > h2 {
+        border-right: none;
+        border-bottom: 4px solid var(--primary);
+        margin-bottom: 20px;
+        text-align: left;
+        font-size: 7vw;
+    }
+}
+
+
