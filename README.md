@@ -5,7 +5,7 @@ i like the way it came out i only wish i had a better picture of myself insted o
 i had a bit of a hard time trying to get it to resize to the right size for phones the picture was to big but i fixed that in the end 
 
 ## screenshot
-![](photos/screenshot.png)
+![](assets/photos/screenshot.png)
 
 
 
